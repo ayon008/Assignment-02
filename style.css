@@ -109,7 +109,6 @@ nav ul li {
 .enjoy {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 25px;
     margin-top: 80px;
     position: relative;
@@ -163,6 +162,7 @@ nav ul li {
     border: none;
 }
 
+
 /*------------------------ Facts-------------------------- */
 .facts {
     margin-top: 90px;
@@ -175,17 +175,19 @@ nav ul li {
     justify-content: center;
     gap: 90px;
     margin-top: 80px;
+
 }
 
 .achivement {
     border: 1px solid #FF900E;
     border-radius: 8px;
-    width: 140.83px;
-    height: 140.83px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
+    width: 140.83px;
+    height: 140.83px;
+    transition: transform 510ms ease-in;
 }
 
 .achivement-number {
@@ -205,6 +207,8 @@ nav ul li {
 /* ----------------Extra Section--------------- */
 .phone-call {
     display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .Extra-section {
@@ -216,6 +220,8 @@ nav ul li {
     margin: auto;
     border-radius: 25px;
     margin-top: 100px;
+    align-items: center;
+    gap: 15px;
 
 }
 
@@ -250,6 +256,70 @@ footer {
     text-align: center;
     background: #FFF4E7;
     border-radius: 8px;
-    margin: 100px 240px 150px;
-    padding: 30px 0px;
+    
+}
+
+/*-------------------------- Media Query----------------------- */
+/* --------------------------Mobile devices--------------------- */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .banner-img img {
+        margin: 50px 0px;
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .enjoy {
+        flex-direction: column;
+    }
+
+    .key-features {
+        width: 100%;
+    }
+
+    .enjoy-img img {
+        width: 100%;
+    }
+
+    .achivements {
+        flex-direction: column;
+    }
+    .achivement {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Extra-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .sponsor-list {
+        flex-direction: column;
+    }
+    .sponsor-list img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:577px) {
+    .enjoy {
+        align-items: center;
+    }
+    footer {
+        margin: 100px 240px 150px;
+        padding: 30px 0px;
+    }
 }
