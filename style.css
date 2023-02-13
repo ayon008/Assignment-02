@@ -131,7 +131,6 @@ nav ul li {
 .key-features {
     width: 450px;
     height: 131px;
-    padding: 20px;
     border-radius: 8px;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -256,7 +255,7 @@ footer {
     text-align: center;
     background: #FFF4E7;
     border-radius: 8px;
-    
+
 }
 
 /*-------------------------- Media Query----------------------- */
@@ -264,10 +263,19 @@ footer {
 @media screen and (max-width:576px) {
     nav {
         flex-direction: column;
+        gap: 15px;
     }
 
     nav ul {
         gap: 20px;
+    }
+
+    .banner-title {
+        margin-top: 20px;
+    }
+
+    .banner-info {
+        margin-top: 10px;
     }
 
     .banner-img img {
@@ -277,6 +285,10 @@ footer {
 
     .features {
         flex-direction: column-reverse;
+    }
+
+    .features-img img {
+        width: 170px;
     }
 
     .enjoy {
@@ -294,30 +306,40 @@ footer {
     .achivements {
         flex-direction: column;
     }
+
     .achivement {
         margin-left: auto;
         margin-right: auto;
     }
+
     .Extra-section {
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
+
     .sponsor-list {
         flex-direction: column;
     }
+
     .sponsor-list img {
         margin-left: auto;
         margin-right: auto;
     }
+
     footer {
         width: 100%;
     }
 }
 
 @media screen and (min-width:577px) {
+    .key-features {
+        padding: 20px;
+    }
+
     .enjoy {
         align-items: center;
     }
+
     footer {
         margin: 100px 240px 150px;
         padding: 30px 0px;
